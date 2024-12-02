@@ -1,0 +1,40 @@
+<div>
+    <div class="column"></div>
+    <div class="column">
+        <mat-card class="mat-card-style">
+            <mat-card-title class="fontlog">Elecciones del Consejo Estudiantil</mat-card-title>
+            <mat-card-content class="container">
+                <form [formGroup]="myForm" novalidate class="fontform" (ngSubmit)="getDato()">
+                    <mat-form-field class="fontform">
+                        <br><input class="form-control" matInput placeholder="Ingrese el código de Cadete" type="text"
+                            formControlName="codigoCadete" />                        
+                    </mat-form-field>
+                    <div [hidden] = "!cadeteConfirmado">
+                        <mat-form-field class="fontform">
+                            <br><input class="form-control" matInput placeholder="Apellido" type="text" readonly
+                                formControlName="apellido" />                        
+                        </mat-form-field>
+
+                        <mat-form-field class="fontform">
+                            <br><input class="form-control" matInput placeholder="Nombre" type="text" readonly
+                                formControlName="nombre" />                        
+                        </mat-form-field>
+
+                        <mat-form-field class="fontform">
+                            <br><input class="form-control" matInput placeholder="Curso" type="text" readonly
+                                formControlName="curso" />                        
+                        </mat-form-field>
+                        
+                        
+                        <div class="button" [hidden]="votoExistente">
+                            <button mat-button class="btn btn-primary" (click)="navegarListas()"
+                                style="border-radius: 20px 5px;">
+                                <h5>Si soy YO...!</h5>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

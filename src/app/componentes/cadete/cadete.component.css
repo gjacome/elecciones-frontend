@@ -1,0 +1,95 @@
+
+.mat-toolbar{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   height: 35vh;
+ }
+ .span{    
+     font-weight:bold;
+     font-size:16px;
+ }
+ .card-container {
+   background-color: white;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .card-content {
+   background-color: white;
+   display: flex;
+   min-width:70vh;
+    align-content: stretch;
+    align-items: center;
+   justify-content: center;
+   border-radius: 2px;
+ }
+ .form-elements{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+ .mat-icon {
+     transform: scale(4);
+ }
+ .form-row{
+    align-content: stretch;
+ } 
+ :host {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+  }
+
+  .mat-form-field {
+    width: 100%;
+    min-width: 300px;
+  }
+
+  mat-card-title,
+  mat-card-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .error {
+    padding: 16px;
+    width: 300px;
+    color: white;
+    background-color: red;
+  }
+
+  .button {
+    display: grid;
+    
+  }
+  .container {
+    display: flex;
+  }
+  
+  .fill {
+    flex: 1;
+  }
+
+  /*  .mat-card{
+    border: 55px solid #e1daff !important;
+    border-radius: 20px !important;
+   } */
+   .mat-card-style{
+    /* background-image: linear-gradient(to top, #fbfeff 0%, #fafdff 100%); */
+    border-radius: 20px !important;
+    opacity: 0.85;
+    background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);
+ background-blend-mode: normal,color-burn;
+  }
+  
+   .fontlog{   
+     font-size: 30px;
+     font-weight: bold;
+   }
+   .fontform{
+    font-family: 'Roboto', cursive;
+    font-size: 20px;
+   }

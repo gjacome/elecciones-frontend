@@ -1,0 +1,45 @@
+.fontform{
+  font-family: 'Roboto', cursive;
+  font-size: 20px;
+}
+
+.button {
+  display: grid;
+}
+
+.row-lista {  
+  margin: 0 auto;
+  display: flex;     
+  padding-top: 5px;
+}
+
+.lista {
+  display: grid;
+  width: 50%;      
+}
+
+
+.lista-seleccionada {
+  display: grid;
+  width: 45%;      
+  background-color: yellow;
+  border-color: yellow;
+  opacity: 0.5;
+}
+
+.lista:hover {
+  border: 5px;
+  border-style: solid;
+  border-color: blue;
+  width: 45;
+}
+
+.lista:active {
+  background-color: yellow;
+  opacity: 1;
+}
+
+.mat-card .mat-card-style .mat-card-image{ 
+  margin: auto!important;
+}
+

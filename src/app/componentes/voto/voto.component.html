@@ -1,0 +1,28 @@
+<div>                
+    <div class="row-lista">                
+        <mat-card class="mat-card-style">
+            <img class="{{obtenerClase('LI1')}}"  mat-card-image src="../../../assets/lista1.jpeg" alt="Lista 1" (click)="setOpcionSeleccionada('LI1')"/>                                                    
+        </mat-card>
+        <mat-card class="mat-card-style">
+            <img class="{{obtenerClase('LI2')}}" mat-card-image src="../../../assets/lista2.jpeg" alt="Lista 2" (click)="setOpcionSeleccionada('LI2')"/>                
+        </mat-card>
+        
+    </div>
+    <div class="row-lista">                
+        <div>
+        <mat-card class="mat-card-style">
+            <img class="{{obtenerClase('LI3')}}" mat-card-image src="../../../assets/lista3.jpeg" alt="Lista 3" (click)="setOpcionSeleccionada('LI3')"/>                                                    
+        </mat-card>
+        </div>
+        <div>
+        <mat-card class="mat-card-style">
+            <img class="{{obtenerClase('LI4')}}" mat-card-image src="../../../assets/lista4.jpeg" alt="Lista 4" (click)="setOpcionSeleccionada('LI4')"/>                                    
+        </mat-card>        
+        </div>
+    </div>
+    <div class="button">
+        <button mat-button class="btn btn-primary" (click)="votar()">
+            <h5>VOTAR</h5>
+        </button>
+    </div>                                                        
+</div>
